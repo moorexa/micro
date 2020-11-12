@@ -5,6 +5,12 @@
 
 Moorexa is an expressive Open-Source PHP MVC Framework with an underlining nature for simplicity and flexibility. It produces a stable, secure system, easier to scale, maintain and document;
 
+With Moorexa, you get more room to be creative, with a powerful CLI manager and so much more.
+
+## Why Moorexa
+
+It produces speed , less dependencies, flexibility, simplicity, quick and easy configuration, simplified MVC architecture, caching, clean codes, more options, functional or object oriented programming, and so much more.
+
 ## The framework,
 1. Defines an elegant Model View Controller (MVC) system
 2. Encourages freedom, creativity, simplicity, and speed
@@ -14,37 +20,45 @@ Moorexa is an expressive Open-Source PHP MVC Framework with an underlining natur
 6. Has a beautiful routing mechanism, multiple database supports, and a fast development cycle for APIs (Application programming interface)
 
 ## Here are some core features built for your comfort and speed;
-1. Reusable partials with custom classes.
-2. Reusable hyper HTML directives for PHP inspired by React JSX
-3. Migration and schema builder for database tables
-4. Event Management
-5. Namespace, autoloaders, shortcuts and endless options for  dynamic building blocks
-6. Classic middlewares, providers, authentication and exception handlers, storage management and much more
-7. Built-in template engine for HTML called REXA
-8. Caching mechanisms for views, partials, templates and more
-9. Query builder for (mysql,sqlite,pgsql) database systems
-10. Assets bundling and so much more
+1. Database query caching
+2. View caching
+3. Multiple view template engines
+4. Perfectly designed MVC architecture
+5. Multiple support for socket servers
+6. Queues and background processing
+7. Powerful CLI support
+8. Bash processing for CLI Environment
+9. Built in Unit testing ( can allow the use of other tools for unit testing)
+10. Multiple database connections
+11. Multiple database supports
+12. Database ORM
+13. Open SSl encryption with private keys 
+14. CSRF token manager
+15. Http request manager
+16. Payloads
+17. Middleware, providers, and guards
+18. Event manager
+19. Resuable partials
+20. Built in JSON DB 
+21. Table migrations, relationships, query builder and much more. 
 
 ## Getting Started
-You've obtained a copy of moorexa, just extract into a working directory, you can run this command from your terminal in the current working directory
+You've obtained a copy of this repo, just extract into a working directory and download other required folders
 
-```bash
-    php assist init
+```
+    src : [https://github.com/moorexa/src]
+    package : [https://github.com/moorexa/package]
+    system : [https://github.com/moorexa/system]
+
+    Then you can run ```php assist init```
 ```
 
-This command would clean up the caching system, generate all the neccessary keys and salts, setup your session and cookie drivers, install the required composer packages. This is entirely optional.
+This command would clean up the caching system, generate all the neccessary keys and salts, setup your session and cookie drivers, install any required composer packages (Entirely optional).
 
-If you want to use a database driver for session and cookie, setup a default database connection in 
-'dist/database/database.php', you can setup a new database with this command;
+Next, you can start the built in development server with 
 
-```bash
-    php assist database create 'database-name' -pass='your dbms password eg. root'
+``` 
+php assist serve 
 ```
 
-and this command to add a database configuration;
-
-```bash
-    php assist database add 'connection-name' -default=dev
-```
-
-and configure session name and cookie name in 'dist/config/config.php', change the driver to 'database' to make this switch.
+Please visit [www.moorexa.com/docs] for more information.
