@@ -19,7 +19,6 @@
     ],
     "require": {
         "ext-json": "*",
-        "ext-gd": "*",
         "ext-openssl": "*",
         "ext-simplexml": "*",
         "ext-fileinfo": "*",
